@@ -14,14 +14,15 @@ body {
     object-fit: cover;
 }
 
-
 .rectangle {
     position: absolute;
-    top: 500px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
-    height: 800px;
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 7 / 16;
     background-color: white;
     border: 2px solid black;
     transition: all 0.3s;
@@ -29,18 +30,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .rectangle img {
-    max-width: 5600px;
-    max-height: 300px;
-    margin-bottom: 500px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .rectangle:hover {
     transform: translate(-50%, -50%) scale(1.05);
 }
-.text{
+
+.text {
     text-align: center;
-    font-size: 24px;
+    font-size: 2vw;
     color: #fff;
     text-shadow: 1px 1px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    margin: 5vw;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 4vw;
+    }
+
+    .rectangle {
+        width: 90%;
+        max-width: 250px;
+    }
 }
