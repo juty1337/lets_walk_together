@@ -16,7 +16,7 @@ body {
 
 .rectangle {
     position: absolute;
-    top: 50%;
+    top: 68%; /* Изменено с 50% на 70% */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -47,6 +47,17 @@ body {
     text-shadow: 1px 1px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
     margin: 5vw;
 }
+
+.text-left {
+
+    position: absolute;
+    top: 540px;
+    left: 2px;
+    color: black;
+    font-size: 17gpx;
+}
+
+
 
 @media (max-width: 768px) {
     .text {
